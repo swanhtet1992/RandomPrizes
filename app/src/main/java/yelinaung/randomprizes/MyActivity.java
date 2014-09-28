@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -37,8 +38,22 @@ public class MyActivity extends Activity {
     peopleArray = getResources().getStringArray(R.array.people_array);
     List<String> mPeople = Arrays.asList(peopleArray);
     ArrayAdapter<String> mPeopleAdapter =
-        new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mPeople);
+        new ArrayAdapter<String>(this, R.layout.list_item, mPeople);
     peopleList.setAdapter(mPeopleAdapter);
+
+    peopleList.setOnScrollListener(new AbsListView.OnScrollListener() {
+      @Override
+      public void onScrollStateChanged(AbsListView view, int scrollState) {
+      }
+
+      @Override
+      public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
+          int totalItemCount) {
+        int topRowVerticalPosition = (peopleList == null || peopleList.getChildCount() == 0) ? 0
+            : peopleList.getChildAt(0).getTop();
+        swipeRefreshLayout.setEnabled(topRowVerticalPosition >= 0);
+      }
+    });
 
     swipeRefreshLayout.setColorSchemeResources(R.color.swipe_refresh_color1,
         R.color.swipe_refresh_color2, R.color.swipe_refresh_color3, R.color.swipe_refresh_color4);
