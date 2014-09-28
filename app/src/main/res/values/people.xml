@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <array name="people_array">
+    <item>Aung Kyaw Paing</item>
+    <item>Aung Pye Sone</item>
+    <item>Aung Kyaw Oo</item>
+    <item>Aye Hnin Khine</item>
+    <item>Aye Mon Kyaw</item>
+    <item>Eain Si Thu Aung</item>
+    <item>Ei Myat Noe Khin</item>
+    <item>Hema Wa Thi</item>
+    <item>Hnin Thanda</item>
+    <item>Khin Moh Moh Thein</item>
+    <item>Kyaw Htet Min</item>
+    <item>Hnin Myat Phyu</item>
+    <item>Min Htet Oo</item>
+    <item>Ye Myat Thu</item>
+    <item>Naw Ray May Dee</item>
+    <item>Nyan Lynn Zaw</item>
+    <item>Paing Soe Aung</item>
+    <item>Phway Thant Chae</item>
+    <item>Sis Hmue Maw</item>
+    <item>Thu Ta Naing</item>
+    <item>Toe Lie</item>
+    <item>Win Htiak Aung</item>
+    <item>Win Win Htet</item>
+    <item>Ye Myint Thu</item>
+    <item>Ye Lin Wai</item>
+    <item>Ying Wit Mon Win</item>
+  </array>
+</resources>
