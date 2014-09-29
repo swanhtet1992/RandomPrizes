@@ -19,6 +19,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:text="Hello World"
     android:id="@+id/list_item"
+    android:padding="8dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAppearance="?android:attr/textAppearanceListItemSmall"
